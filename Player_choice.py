@@ -19,3 +19,6 @@ elif choice == "3":
     character = "Human"
 else:
     character = "Unknown"
+
+# 4: Confirm the selection
+print(f"You have chosen: {character}")
