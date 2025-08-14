@@ -1,3 +1,5 @@
+
+
 char_choice = input("Enter the number of your choice: ")
 
 # 3: Match the choice to the character
