@@ -6,7 +6,7 @@ wizard = "Wizard"
 elf = "Elf"
 human = "Human"
 
-wizard_hp=7
+wizard_hp=70
 elf_hp=100
 human_hp=150
 
@@ -56,6 +56,9 @@ else:
 print ("====================================")
 print(f"You have chosen: ||{character}||")
 print ("====================================")
+print (" ")
+
+
 
 
 
@@ -68,14 +71,19 @@ while True:
             dragon_hp = dragon_hp - wizard_damage
 
             print(f"You hit the enemy,dragons! hp is {dragon_hp} ")
+            print (" ")
             print ("====================================")
+            print (" ")
             if dragon_hp <= 0:
                 print("Enemy ship destroyed! You win the battle!")
+                print (" ")
                 print ("====================================")
 
                 break           
             print(f"The enemy hit you,your hp is {wizard_hp}")
+            print (" ")
             print ("====================================")
+            print (" ")
 
             if wizard_hp <= 0:
                 print ("====================================")
