@@ -46,26 +46,26 @@ while True:
     print("3) Human")
     print ("============================")
 # 2: Get the player's choice
-    choice = input("Enter the character you wish to fight with: ")
+    character_choice = input("Choose your character: ")
     print (" ")
 
 # 3: Match the choice to the character
 
     character=""
-    if choice == "1":
+    if character_choice == "1":
         character = "Wizard"
-        player_hp=wizard_hp
-        player_damage=wizard_damage
+        my_hp = wizard_hp
+        my_damage = wizard_damage
         break
-    elif choice == "2":
+    elif character_choice == "2":
         character = "Elf"
-        player_hp=elf_hp
-        player_damage=elf_damage
+        my_hp = elf_hp
+        my_damage = elf_damage
         break
-    elif choice == "3":        
+    elif character_choice == "3":        
         character = "Human"
-        player_hp=human_hp
-        player_damage=human_damage
+        my_hp = elf_hp
+        my_damage = elf_damage
         break
     else:
         show_message("Warning!", f"Please select an existing player,you have chosen {choice}")
@@ -79,14 +79,14 @@ while True:
 
 
     print("=== BATTLESHIP COMBAT ===")
-    print(f"You are playing as {character} with {player_hp} HP and {player_damage} damage.")
+    print(f"You are playing as {character} with {my_hp} HP and {my_damage} damage.")
     print(f"Dragon HP is: {dragon_hp}")
     print("_____________________________________________________________________________________________")
     print("LET THE GAMES BEGIN!")
 
 while True:
     # Player attacks
-    dragon_hp -= player_damage
+    dragon_hp -= my_damage
     print(f"You hit the enemy dragon! Dragon's HP is now {dragon_hp}")
     print (" ")
     if dragon_hp <= 0:
@@ -96,10 +96,10 @@ while True:
 
     # Dragon attacks
     
-    player_hp -= dragon_damage
-    print(f"The dragon hits you! Your HP is now {player_hp}")
+    my_hp -= dragon_damage
+    print(f"The dragon hits you! Your HP is now {my_hp}")
     print (" ")
 
-    if player_hp <= 0:
+    if my_hp <= 0:
         print("YOU LOSE!")
         break         
