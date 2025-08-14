@@ -22,7 +22,7 @@ The **Dragon** starts with **300 HP** and deals **50 damage** each turn.
 ##  How to Play
 1. **Run the script** in your terminal:
    ```bash
-   python dragon_battle.py
+   python battlegame.py
 
 2. Choose your character by entering a number:
 

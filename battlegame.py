@@ -17,7 +17,7 @@ elf_damage=100
 human_damage=20
 
 dragon_hp=300
-dragon_damage=5
+dragon_damage=50
 
 
 
@@ -35,14 +35,19 @@ def show_message(title,message):
 # Task: Prompt Player to Choose a Characters
 # 1: Show the available characters
 while True:
+    
+    print ("============================")
     print("Choose your character:")
+    print (" ")
     print("1) Wizard")
+    print (" ")
     print("2) Elf")
+    print (" ")
     print("3) Human")
-
+    print ("============================")
 # 2: Get the player's choice
-    choice = input("Enter the number of your choice: ")
-
+    choice = input("Enter the character you wish to fight with: ")
+    print (" ")
 
 # 3: Match the choice to the character
 
@@ -83,15 +88,17 @@ while True:
     # Player attacks
     dragon_hp -= player_damage
     print(f"You hit the enemy dragon! Dragon's HP is now {dragon_hp}")
-
+    print (" ")
     if dragon_hp <= 0:
         print("Enemy ship destroyed! You win the battle!")
+        print (" ")
         break
 
     # Dragon attacks
-    dragon_damage=random.randint(20,30)
+    dragon_damage=random.randint(0,50)
     player_hp -= dragon_damage
     print(f"The dragon hits you! Your HP is now {player_hp}")
+    print (" ")
 
     if player_hp <= 0:
         print("YOU LOSE!")
