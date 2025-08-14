@@ -95,7 +95,7 @@ while True:
         break
 
     # Dragon attacks
-    dragon_damage=random.randint(0,50)
+    
     player_hp -= dragon_damage
     print(f"The dragon hits you! Your HP is now {player_hp}")
     print (" ")
