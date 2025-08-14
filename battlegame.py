@@ -1,6 +1,6 @@
-wizard="wizard"
-elf="elf"
-human="human"
+wizard = "Wizard"
+elf = "Elf"
+human = "Human"
 
 wizard_hp=70
 elf_hp=100
