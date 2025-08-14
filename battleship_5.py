@@ -1,8 +1,8 @@
 import random
 
 # Game setup
-player_hp = 100
-enemy_hp = 100
+wizard_hp = 100
+elf_hp = 100
 player_damage = random.randint(15, 25)
 enemy_damage = random.randint(10, 20)
 
