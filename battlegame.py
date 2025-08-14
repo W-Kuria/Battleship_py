@@ -95,6 +95,7 @@ while True:
         break
 
     # Dragon attacks
+    
     player_hp -= dragon_damage
     print(f"The dragon hits you! Your HP is now {player_hp}")
     print (" ")
