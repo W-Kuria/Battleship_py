@@ -8,6 +8,3 @@ print("3) Human")
 
 # 2: Get the player's choice
 char_choice = input("Enter the number of your choice: ")
-
-
-
